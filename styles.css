@@ -1,0 +1,98 @@
+/* === Global Page Styling === */
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+}
+
+/* === Header & Navigation === */
+header, footer {
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1em 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin: 0.2em 0;
+  color: #222;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 1.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e75480;
+}
+
+nav a.active {
+  color: #e75480;
+}
+
+/* === Main Content === */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* === About Section === */
+#about-page {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 2em 3em;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 600px;
+  margin: 2em auto;
+}
+
+#about-page h2 {
+  margin-top: 0;
+  color: #e75480;
+  font-size: 1.8rem;
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  #about-page {
+    padding: 1.5em;
+    margin: 1em;
+  }
+
+  #about-page h2 {
+    font-size: 1.5rem;
+  }
+}
